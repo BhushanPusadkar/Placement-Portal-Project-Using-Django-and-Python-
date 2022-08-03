@@ -1,0 +1,239 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color:#129898;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+a{
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  
+}
+a:hover{
+  background-color: #ddd;
+  color: black;
+ 
+}
+.skip{
+  background-color: #f1f1f1;
+  color: black;
+}
+</style>
+</head>
+<body style="background-color:#129898;">
+
+<div class="container" style="background-color:#ffffff;">
+
+<h1>Mitra Placement Portal</h1>
+<br>
+<h2>Student Page</h2>
+
+<div class="topnav">
+  <a class="active" href="studentpage">Home</a>
+  
+  <a href="profile">Profile</a>
+  <a href="update">Update Student Details</a>
+  
+  
+  <a href="#"></a>
+  <a href="#"></a>
+  <a href="#"></a>
+  
+</div>
+<br/><br/>
+<div class="row">
+<div class="col-md-2"></div>
+<div class="col-md-8">
+  <h2><b>Backlog /  Year Gap</b></h2>
+  <hr>
+  <form action="Backlogdata" method="post">
+    Number of Current Backlog
+    <select type="text" placeholder="Number of Current Backlog" name="Curbacklog" class="form-control" required>
+      <option value=""></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select>
+    
+    <br/>
+    Total Baglog till Now
+    <select type="text" placeholder="Total Baglog till Now" name="Total_backlog" class="form-control" required>
+      <option value=""></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select><br>
+    <br/>
+    Year Gap after SSC
+    <select type="text" placeholder="Year Gap after SSC" name="SSC_backlog" class="form-control" required>
+      <option value=""></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select><br>
+    <br/>
+    Year Gap after HSC/Diploma
+    <select type="text" placeholder="Year Gap after HSC/Diploma" name="HSC_backlog" class="form-control" required>
+      <option value=""></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select><br>
+    <br/>
+    Year Gap During  BE
+    <select type="text" placeholder="Year Gap During  BE" name="BE_gap" class="form-control" required>
+      <option value=""></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select><br>
+    <br/>
+    total year gap in eduction till date
+    <select type="text" placeholder="Year Gap During  BE" name="Educ_gap" class="form-control" required>
+      <option value=""></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select><br>
+    <input type="date" name="Date" class="form-control">
+    <br/>
+   
+     <input type="submit" value="Submit">&nbsp&nbsp&nbsp&nbsp 
+<br/>
+
+
+<h4></h4>
+<br/>
+<div class="row">
+<div class="col-md-4">
+<form>
+</div>
+<div>
+
+</div>
+<div>
+
+</form>
+</div>
+</div>
+
+
+<br/>
+<br/>
+<br/>
+
+
+
+</div>
+
+</div>
+</body>
+</html>

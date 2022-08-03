@@ -1,0 +1,162 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color:#129898;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+a{
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  
+}
+a:hover{
+  background-color: #ddd;
+  color: black;
+ 
+}
+.skip{
+  background-color: #f1f1f1;
+  color: black;
+}
+
+</style>
+</head>
+<body style="background-color:#129898;">
+
+<div class="container" style="background-color:#ffffff;">
+
+<h1>Mitra Placement Portal</h1>
+<br>
+<h2>Student Page</h2>
+
+<div class="topnav">
+  <a class="active" href="studentpage">Home</a>
+  
+  <a href="profile">Profile</a>
+  <a href="update">Update Student Details</a>
+  
+  
+  <a href="#"></a>
+  <a href="#"></a>
+  <a href="#"></a>
+  
+</div>
+<br/><br/>
+<div class="row">
+<div class="col-md-2"></div>
+<div class="col-md-8">
+  <h2><b>HSC Details</b></h2>
+  <hr>
+  <form action="insertHSCdata" method="post">
+    Board of HSC
+    <input type="text" placeholder="year of passing" name="br_name" class="form-control" required>
+    <br/>
+    Year of Passing
+    <input type="text" placeholder="name of Board" name="yer_pass" class="form-control" required>
+    <br/>
+    Specialization
+    <input type="text" placeholder="enter your Percentage" name="spe_name" class="form-control" required>
+    <br/>
+    Percentage 12th
+    <input type="text" placeholder="enter your Percentage" name="mark" class="form-control" required>
+    <br/>
+    CGPA
+    <input type="text" placeholder="enter your CGPA" name="cgpa" class="form-control" required>
+    <br/>
+     <input type="submit" value="Submit">&nbsp&nbsp&nbsp&nbsp<a href="graduction" class="Skip">Skip</a> 
+<br/>
+
+
+<h4></h4>
+<br/>
+<div class="row">
+<div class="col-md-4">
+<form>
+</div>
+<div>
+
+</div>
+<div>
+
+</form>
+</div>
+</div>
+
+
+<br/>
+<br/>
+<br/>
+
+
+
+</div>
+
+</div>
+</body>
+</html>
